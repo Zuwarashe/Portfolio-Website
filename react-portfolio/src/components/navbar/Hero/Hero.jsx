@@ -9,7 +9,7 @@ export const Hero = () => {
     <section className={styles.container}>
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Zuwarashe</h1>
+        <h1 className={styles.title}>Hi, I'm Zuwa</h1>
         <h3 className={styles.textAnimation}>I'm a <span></span></h3>
         <TextHeroCard />
         <div className = {styles.socialIcons}>

@@ -6,13 +6,13 @@
     --color-dark: #0b2447;
     --color-bg: #051819;
 
-    --bg-color: #535353;
+     --bg-color: #535353;
     --second-bg-color: #2C2C2C;
     --text-color: #D8DFDF;
     --main-color: white;
     --normal-color: white;
     --orange-color: #FF7300;
-  
+  /*#FF7300*/
     /* Fonts */
     --font-roboto: "Roboto";
   }
