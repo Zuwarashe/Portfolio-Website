@@ -13,7 +13,7 @@ export function TextHeroCard() {
     
     <div className="flex items-center justify-center ">
     <TextRevealCard
-      text = "Come find out"
+      text = ""
       revealText= {
         <p className={styles.description}>
         <p>From excelling in high school through the <span>&lt; Cambridge /&gt;</span> system, my journey has been one of growth and passion for learning. As a <span>&lt; Bachelor of Computer and Information Sciences in Application Development  /&gt;</span> student in Cape Town, I focus on  programming, databases, cloud development, and networking . 
