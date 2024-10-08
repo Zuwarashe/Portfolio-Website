@@ -265,6 +265,78 @@
   gap: 1.5rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  position: fixed;
+  margin-left: -5%; /* Adjust the horizontal position */
+  top: 600px;       /* Vertical position */
+  width: 40px;      /* Adjust width */
+  height: auto;     /* Let height adjust based on content */
+  background-color: black;
+  color: var(--main-color);
+  border: 2px solid var(--orange-color);
+  box-shadow: 0 0 25px var(--orange-color);
+
+  border-radius: 20px 20px 15px 15px; /* Fully round top corners for semi-circle, bottom rounded too */
+ 
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Style the list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Ensure no margin for the list */
+}
+
+/* Style each list item */
+.navbar li {
+  padding-left: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add a thin line between items */
+}
+
+/* Remove bottom border from last item */
+li:last-child {
+  border-bottom: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  border-radius: 5px; /* Slight rounding for links */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .btnGroup a:nth-of-type(2){
   background-color: black;
   color: var(--orange-color);

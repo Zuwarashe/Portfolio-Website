@@ -6,7 +6,9 @@ import { TextHeroCard } from "../TextRevealCard/TextHeroCard";
 export const Hero = () => {
   return (
     
-    <section className={styles.container}>
+    <section>
+
+<section className={styles.container}>
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Zuwa</h1>
@@ -17,9 +19,22 @@ export const Hero = () => {
                     <a href="#"><i class='bx bxl-github' ></i></a>
         </div>
         <div className = {styles.btnGroup}>
-                    <a href="#" className={styles.btn}>Hire</a>
+                    <a href="#" className={styles.btn}>Download Cv</a>
                     <a href="#contact" className={styles.btn}>Contact</a>
         </div>
+
+        
+        <div className={styles.navbar}>
+         <ul>
+        <li> <a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+        <li> <a href="#"><i class='bx bxl-github' ></i></a></li>
+        <li><a href="#home">01</a></li>
+        <li><a href="#about">02</a></li>
+        <li><a href="#services">03</a></li>
+        <li><a href="#contact">04</a></li>
+        <li> <a href="#"><i class='bx bx-phone-call'></i></a></li>
+        </ul>
+       </div>
       </div>
      
       <div className={styles.homeImg} >
@@ -28,9 +43,13 @@ export const Hero = () => {
         alt="Hero image of me"
       />
       </div>
-     
+      
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
+      
     </section>
+
+    </section>
+   
   );
 };

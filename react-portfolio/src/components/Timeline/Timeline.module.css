@@ -1,0 +1,263 @@
+@import "../../vars.css";
+
+.timeliner {
+    margin-top: 20px;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 50px black;
+    z-index: 0; /* Ensure it stays on top of the canvas */
+}
+
+.title {
+    position: relative;
+    color: var(--main-color);
+    font-size: 65px;
+    font-weight: 800;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center; /* Center text horizontally within the flex container */
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding-bottom: 10px;
+  }
+
+
+  .exImage {
+    position: relative; /* Maintain the relative position */
+    top: 80px; /* Adjust this value to position it directly over the text */
+    left: 31%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Shift left by half its width to center it */
+    width: 250px; /* Adjust the width based on your image size */
+    height: 250px; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure the image sits above the text */
+  }
+.containerr {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    height: auto;
+    margin-top: 10px;
+    animation: movedown 2s linear forwards, floating 6s ease-in-out infinite;
+}
+
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px); /* Move up */
+    }
+    50% {
+        transform: translateY(-2px); /* Return to original position */
+    }
+    75% {
+        transform: translateY(5px); /* Move down slightly */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.textBoxr {
+    padding: 20px 30px;
+    position: relative;
+    background-color: #17141d;
+    color: #17141d;
+    border-radius: 6px; 
+    box-shadow: 0 0 15px white;
+    font-size: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    animation: shadowPulse 3s ease-in-out infinite;
+}
+
+@keyframes shadowPulse {
+    0% {
+        box-shadow: 0 0 15px white;
+    }
+    50% {
+        box-shadow: 0 0 30px white; /* Increase the intensity at the midpoint */
+    }
+    100% {
+        box-shadow: 0 0 15px white;
+    }
+}
+
+.textBoxr:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--orange-color);
+    border: 2px solid var(--orange-color);
+    color: white;
+    background-color: black;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #17141d;
+    margin: 10px 0;
+}
+
+.textBoxr:hover .line {
+    background-color: white; /* Line color */
+}
+
+.rightContainer {
+    left: 50%;
+}
+
+.leftContainer {
+    left: 0;
+}
+
+.containerr img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.rightContainer img {
+    left: -20px;
+}
+
+.timeliner::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear infinite;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: 100%;
+    }
+    100% {
+        height: 0;
+    }
+}
+
+.textBoxr h2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.textBoxr:hover .icons {
+    color: var(--orange-color);
+    font-size: 35px;
+}
+
+.textBoxr small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.bulletList {
+    padding-left: 20px;
+    margin: 10px 0;
+    color: #17141d;
+    list-style-type: disc;
+}
+
+.bulletList li:last-child {
+    margin-bottom: 0;
+}
+
+.textBoxr:hover .bulletList {
+    color: #fff;
+}
+
+
+/* Modal Overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it sits above all other content */
+    opacity: 0;
+    animation: fadeIn 0.3s forwards; /* Smooth fade-in animation */
+  }
+  
+  /* Modal Content */
+  .modalContent {
+    background-color: #17141d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); /* Subtle glow effect */
+    transform: scale(0.9);
+    animation: popUp 0.3s forwards; /* Pop-up animation */
+  }
+  
+  .closeButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--orange-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .closeButton:hover {
+    background-color: #ff9b00; /* Slightly darker on hover */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popUp {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

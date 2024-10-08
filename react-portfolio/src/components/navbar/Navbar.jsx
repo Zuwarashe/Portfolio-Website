@@ -9,7 +9,7 @@ export const Navbar = () => {
         <nav className={styles.navbar}>
         < a className={styles.title} href="/">
        
-            <span className={styles.spanr}>Z</span>uwarashe<span className={styles.spanr}>M</span>akarimayi
+            <span className={styles.spanr}>Z</span>uwarashe <span className={styles.spanr}> M</span>akarimayi
         
         </a>
         <div className={styles.menu}>
