@@ -4,24 +4,51 @@ import { getImageUrl } from "../../utils";
 
 const Timeline = () => {
   const [activeIcon, setActiveIcon] = useState(null); // Track which icon is clicked
+  const [modalContent, setModalContent] = useState(null); // Store modal content
 
+  // Open the modal based on the clicked icon
   const openIconModal = (icon) => {
-    setActiveIcon(icon); // Set the active icon for the modal
+    let content;
+    switch (icon) {
+      case 'Mastercard document':
+        content = <img src={getImageUrl('timeline/mastercardcert.png')} alt="Mastercard Certificate" />;
+        break;
+      case 'JPM document':
+        content = <img src={getImageUrl('timeline/jpmorgan.png')} alt="JPMorgan Certificate" />;
+        break;
+      case 'Korbistat photo':
+        content = <img src={getImageUrl('timeline/korbitstat.jpg')} alt="Korbistat Job Shadow Photo" />;
+        break;
+      case 'Korbistat phone':
+        content = <p>Reference Number: +27 123 456 789</p>;
+        break;
+      case 'Stellenbosch phone':
+        content = <p>Reference Number: +27 987 654 321</p>;
+        break;
+      case 'Hero phone':
+        content = <p>Reference Number: +27 555 555 555</p>;
+        break;
+      default:
+        content = <p>No content available</p>;
+    }
+    setActiveIcon(icon);
+    setModalContent(content);
   };
 
   const closeIconModal = () => {
     setActiveIcon(null); // Close the modal
+    setModalContent(null);
   };
 
   return (
-    <section className={styles.timeliner}>
-        <img
+    <section className={styles.timeliner} id="Experience">
+      <img
         src={getImageUrl("timeline/experience.png")}
         alt="sneakylook"
         className={styles.exImage}
       />
-        <h2 className={styles.title}>Experience</h2>
-      {/* Timeline content */}
+      <h2 className={styles.title}>Experience</h2>
+      
       <div className={`${styles.containerr} ${styles.leftContainer}`}>
         <img src={getImageUrl("timeline/mastercard.png")} alt="Company logo" />
         <div className={styles.textBoxr}>
@@ -107,7 +134,7 @@ const Timeline = () => {
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
           >
             <h2>{activeIcon}</h2>
-            <p>Details about {activeIcon}</p>
+            {modalContent}
             <button onClick={closeIconModal} className={styles.closeButton}>
               Close
             </button>

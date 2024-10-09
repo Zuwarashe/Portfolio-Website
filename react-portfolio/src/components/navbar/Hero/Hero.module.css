@@ -4,12 +4,11 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 49px;
+  margin-top: 1%;
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
 }
-
 .content {
   display: flex;
   flex-direction: column;
@@ -17,7 +16,6 @@
   color: var(--color-text);
   z-index: 1;
 }
-
 .title {
   font-size: 52px;
   font-weight: 800;
@@ -31,13 +29,11 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-
 .description {
   font-size: 15px;
   font-family: var(--font-roboto);
   margin-bottom: 0px;
 }
-
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
@@ -48,9 +44,6 @@
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
-
-
-
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
@@ -279,7 +272,7 @@
 .navbar {
   position: fixed;
   margin-left: -5%; /* Adjust the horizontal position */
-  top: 600px;       /* Vertical position */
+  top: 40%;       /* Vertical position */
   width: 40px;      /* Adjust width */
   height: auto;     /* Let height adjust based on content */
   background-color: black;

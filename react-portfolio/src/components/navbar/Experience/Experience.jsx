@@ -6,13 +6,41 @@ export const Experience = () => {
   const [activeCard, setActiveCard] = useState(null); // State to track active card
 
   const skills = [
-    { name: "Css", icon: "css" },
-    { name: "Figma", icon: "figma" },
-    { name: "GraphQL", icon: "graphql" },
-    { name: "Html", icon: "html" },
-    { name: "MongoDB", icon: "mongodb" },
-    { name: "Nodejs", icon: "node" },
-    { name: "React", icon: "react" }
+    { 
+      name: "Css", 
+      icon: "css", 
+      githubLinks: ["https://github.com/user/css-project1", "https://github.com/user/css-project2"]
+    },
+    { 
+      name: "Figma", 
+      icon: "figma", 
+      githubLinks: ["https://github.com/user/figma-project1"]
+    },
+    { 
+      name: "GraphQL", 
+      icon: "graphql", 
+      githubLinks: ["https://github.com/user/graphql-project1"]
+    },
+    { 
+      name: "Html", 
+      icon: "html", 
+      githubLinks: ["https://github.com/user/html-project1", "https://github.com/user/html-project2"]
+    },
+    { 
+      name: "MongoDB", 
+      icon: "mongodb", 
+      githubLinks: ["https://github.com/user/mongodb-project1"]
+    },
+    { 
+      name: "Nodejs", 
+      icon: "node", 
+      githubLinks: ["https://github.com/user/node-project1"]
+    },
+    { 
+      name: "React", 
+      icon: "react", 
+      githubLinks: ["https://github.com/user/react-project1", "https://github.com/user/react-project2"]
+    }
   ];
 
   const openCard = (skill) => {
@@ -24,7 +52,7 @@ export const Experience = () => {
   };
 
   return (
-    <section>
+    <section id="skills">
       <img
         src={getImageUrl("skills/sneak.png")}
         alt="sneakylook"
@@ -68,7 +96,16 @@ export const Experience = () => {
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
             >
               <h2>{activeCard.name}</h2>
-              <p>Details about {activeCard.name}</p>
+              <p>Check out the projects:</p>
+              <ul>
+                {activeCard.githubLinks.map((link, index) => (
+                  <li key={index}>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      {`Project ${index + 1}`}
+                    </a>
+                  </li>
+                ))}
+              </ul>
               <button onClick={closeCard} className={styles.closeButton}>
                 Close
               </button>

@@ -3,8 +3,6 @@ import React from "react";
 import styles from "./TextHeroCard.module.css";
 import {
   TextRevealCard,
-  TextRevealCardDescription,
-  TextRevealCardTitle,
 } from "../TextRevealCard/text-reveal-card";
 
 export function TextHeroCard() {

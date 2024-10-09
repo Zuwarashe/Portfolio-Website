@@ -8,7 +8,7 @@ export const Hero = () => {
     
     <section>
 
-<section className={styles.container}>
+<section className={styles.container} id="home">
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Zuwa</h1>
@@ -29,10 +29,10 @@ export const Hero = () => {
         <li> <a href="#"><i class='bx bxl-linkedin' ></i></a></li>
         <li> <a href="#"><i class='bx bxl-github' ></i></a></li>
         <li><a href="#home">01</a></li>
-        <li><a href="#about">02</a></li>
-        <li><a href="#services">03</a></li>
-        <li><a href="#contact">04</a></li>
-        <li> <a href="#"><i class='bx bx-phone-call'></i></a></li>
+        <li><a href="#Education">02</a></li>
+        <li><a href="#skills">03</a></li>
+        <li><a href="#experience">04</a></li>
+        <li> <a href="#contact"><i class='bx bx-phone-call'></i></a></li>
         </ul>
        </div>
       </div>
