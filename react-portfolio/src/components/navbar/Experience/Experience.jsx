@@ -7,29 +7,29 @@ export const Experience = () => {
 
   const skills = [
     { 
-      name: "Css", 
-      icon: "css", 
-      githubLinks: ["https://github.com/user/css-project1", "https://github.com/user/css-project2"]
+      name: "C", 
+      icon: "C", 
+      githubLinks: ["https://github.com/Zuwarashe/Good-codes-to-rememeber"]
     },
     { 
       name: "Figma", 
       icon: "figma", 
-      githubLinks: ["https://github.com/user/figma-project1"]
+      githubLinks: ["https://www.figma.com/files/team/1183702103826340999/project/293059167/Drafts?fuid=1183702093818423437"]
     },
     { 
-      name: "GraphQL", 
-      icon: "graphql", 
-      githubLinks: ["https://github.com/user/graphql-project1"]
+      name: "C-Sharp", 
+      icon: "CSHARP", 
+      githubLinks: ["https://github.com/Zuwarashe/Municipality-App" ,"https://github.com/Zuwarashe/Agri-energy"]
     },
     { 
-      name: "Html", 
-      icon: "html", 
-      githubLinks: ["https://github.com/user/html-project1", "https://github.com/user/html-project2"]
+      name: "Java",  
+      icon: "java", 
+      githubLinks: ["https://github.com/Zuwarashe/Obstacle-Chess"]
     },
     { 
-      name: "MongoDB", 
-      icon: "mongodb", 
-      githubLinks: ["https://github.com/user/mongodb-project1"]
+      name: "Android Studio", 
+      icon: "android", 
+      githubLinks: ["https://github.com/Zuwarashe/SpoonacularApp"]
     },
     { 
       name: "Nodejs", 
@@ -39,7 +39,17 @@ export const Experience = () => {
     { 
       name: "React", 
       icon: "react", 
-      githubLinks: ["https://github.com/user/react-project1", "https://github.com/user/react-project2"]
+      githubLinks: ["https://github.com/Zuwarashe/Portfolio-Website"]
+    },
+    { 
+      name: "JavaScript", 
+      icon: "javas", 
+      githubLinks: ["https://github.com/Zuwarashe/Portfolio-Website"]
+    },
+    { 
+      name: "Python", 
+      icon: "python", 
+      githubLinks: ["https://github.com/Zuwarashe/Role-Access-Management-System-with-LRU-Caching", "https://github.com/Zuwarashe/Fraud-detection-in-financial-payment-service"]
     }
   ];
 

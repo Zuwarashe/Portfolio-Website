@@ -26,7 +26,7 @@ body {
   transform: translateX(-50%); /* Shift left by half its width to center it */
   width: 250px; /* Adjust the width based on your image size */
   height: 250px; /* Maintain aspect ratio */
-  z-index: 1; /* Ensure the image sits above the text */
+  z-index: 0; /* Ensure the image sits above the text */
 }
 
 .container {
@@ -161,17 +161,18 @@ svg {
 
 /* Modal Content */
 .modalContent {
-  background-color: whitesmoke;
-  color: black;
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
   padding: 20px;
   border-radius: 10px;
   width: 400px;
   max-width: 80%;
   text-align: center;
-  box-shadow: 0 0 20px var(--orange-color); /* Subtle glow effect */
+  box-shadow: 0 0 20px white; /* White box shadow */
   transform: scale(0.9);
   animation: popUp 0.3s forwards; /* Pop-up animation */
 }
+
 
 .closeButton {
   margin-top: 20px;

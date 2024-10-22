@@ -169,7 +169,7 @@
 }
 
 .modalImage {
-  width: 50%;
+  width: 65%;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
@@ -179,13 +179,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.modalImage {
-  width: 50%;
-  height: auto;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+
 
 /* Navigation Buttons */
 .navigationButtons {

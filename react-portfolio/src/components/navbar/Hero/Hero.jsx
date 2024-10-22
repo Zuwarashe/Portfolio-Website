@@ -15,8 +15,8 @@ export const Hero = () => {
         <h3 className={styles.textAnimation}>I'm a <span></span></h3>
         <TextHeroCard />
         <div className = {styles.socialIcons}>
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/zuwarashe-makarimayi-974873247/"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/Zuwarashe"><i class='bx bxl-github' ></i></a>
         </div>
         <div className = {styles.btnGroup}>
                     <a href="#" className={styles.btn}>Download Cv</a>
@@ -26,8 +26,8 @@ export const Hero = () => {
         
         <div className={styles.navbar}>
          <ul>
-        <li> <a href="#"><i class='bx bxl-linkedin' ></i></a></li>
-        <li> <a href="#"><i class='bx bxl-github' ></i></a></li>
+        <li> <a href="https://www.linkedin.com/in/zuwarashe-makarimayi-974873247/"><i class='bx bxl-linkedin' ></i></a></li>
+        <li> <a href="https://github.com/Zuwarashe"><i class='bx bxl-github' ></i></a></li>
         <li><a href="#home">01</a></li>
         <li><a href="#Education">02</a></li>
         <li><a href="#skills">03</a></li>
