@@ -14,8 +14,8 @@ export function TextHeroCard() {
       text = ""
       revealText= {
         <p className={styles.description}>
-       <p>From excelling in high school under the <span>&lt;Cambridge&gt;</span> system to pursuing a <span>&lt;Bachelor of Computer and Information Sciences in Application Development&gt;</span> in Cape Town, I focus on programming, databases, cloud development, and networking. As a <span>&lt;student mentor&gt;</span> at Stellenbosch, I supported first-year BCom students, and as Head of <span>&lt;Sports, Alumni, and Social Relations&gt;</span> at Capri, I honed my leadership skills. My experience as head bartender at Stones also strengthened my <span>&lt;interpersonal skills&gt;</span> and ability to <span>&lt;thrive under pressure&gt;</span>. I am a passionate student, continuously seeking new challenges and solutions, always eager to learn and grow.</p>
-        </p>
+            I’m currently completing my <span>&lt;Bachelor of Computer and Information Sciences in Application Development&gt;</span> in Cape Town, where I focus on <span>&lt;programming&gt;</span>, <span>&lt;databases&gt;</span>, <span>&lt;cloud development&gt;</span>, and <span>&lt;networking&gt;</span>. My experience includes internships at <span>&lt;JPMorgan Chase&gt;</span> and <span>&lt;Mastercard&gt;</span>, where I specialized in <span>&lt;cybersecurity&gt;</span> and <span>&lt;application security&gt;</span>. Beyond tech, I’ve held leadership roles, honing my <span>&lt;leadership&gt;</span> and <span>&lt;teamwork&gt;</span> skills. I’m always eager to <span>&lt;innovate&gt;</span> and solve complex problems.
+          </p>
       }
     >
      

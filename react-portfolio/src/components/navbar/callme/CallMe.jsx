@@ -25,12 +25,24 @@ const CallMe = () => {
                 <li tabIndex="0" className={styles.digit}>
                     <span>9</span>
                 </li>
+                <li tabIndex="0" className={styles.digit}>
+                    <span>3</span>
+                </li>
+                <li tabIndex="0" className={styles.digit}>
+                    <span>0</span>
+                </li>
+                <li tabIndex="0" className={styles.digit}>
+                    <span>6</span>
+                </li>
+                <li tabIndex="0" className={styles.digit}>
+                    <span>4</span>
+                </li>
             </ul>
             <img
-        src={getImageUrl("callme/call.png")}
-        alt="sneakylook"
-        className={styles.callImage}
-      />
+                src={getImageUrl("callme/call.png")}
+                alt="sneakylook"
+                className={styles.callImage}
+            />
         </section>
     );
 };

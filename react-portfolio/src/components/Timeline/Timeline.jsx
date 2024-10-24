@@ -19,14 +19,14 @@ const Timeline = () => {
       case 'Korbistat photo':
         content = <img src={getImageUrl('timeline/korbitstat.jpg')} alt="Korbistat Job Shadow Photo" />;
         break;
-      case 'Korbistat phone':
-        content = <p>Reference Number: +27 123 456 789</p>;
+      case 'Korbistat':
+        content = <p>Reference : lauren.gara@korbistat.com</p>;
         break;
-      case 'Stellenbosch phone':
-        content = <p>Reference Number: +27 987 654 321</p>;
+      case 'Stellenbosch':
+        content = <p>Reference :jethro@sun.ac.za</p>;
         break;
-      case 'Hero phone':
-        content = <p>Reference Number: +27 555 555 555</p>;
+      case 'Heros':
+        content = <p>Reference: baxter@heroevents.co.za</p>;
         break;
       default:
         content = <p>No content available</p>;
@@ -92,7 +92,7 @@ const Timeline = () => {
             <li>Collaborated with diverse tech students, enhancing my understanding of the industry.</li>
           </ul>
           <i className={`${styles.icons} bx bx-photo-album`} onClick={() => openIconModal('Korbistat photo')} />
-          <i className={`${styles.icons} bx bx-phone`} onClick={() => openIconModal('Korbistat phone')} />
+          <i className={`${styles.icons} bx bx-phone`} onClick={() => openIconModal('Korbistat')} />
         </div>
       </div>
 
@@ -107,7 +107,7 @@ const Timeline = () => {
             <li>Organized and coordinated all sporting activities for the house throughout the year.</li>
             <li>Directed and executed social impact events to benefit the house community.</li>
           </ul>
-          <i className={`${styles.icons} bx bx-phone`} onClick={() => openIconModal('Stellenbosch phone')} />
+          <i className={`${styles.icons} bx bx-phone`} onClick={() => openIconModal('Stellenbosch')} />
         </div>
       </div>
 
@@ -122,7 +122,7 @@ const Timeline = () => {
             <li>Trained and mentored new staff.</li>
             <li>Maintained high standards of service quality and adherence to company policies and procedures.</li>
           </ul>
-          <i className={`${styles.icons} bx bx-phone`} onClick={() => openIconModal('Hero phone')} />
+          <i className={`${styles.icons} bx bx-phone`} onClick={() => openIconModal('Heros')} />
         </div>
       </div>
 
